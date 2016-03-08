@@ -1,0 +1,20 @@
+in calculator-app folder:
+
+mvn package - package colculator-app with maven 
+
+mvn install - install to loc repo
+
+in quadraticEqution folder:
+
+mvn package - maven doesn't pack Calculator.class (?)
+
+cd target
+
+java -jar quadraticEqution-1.0-SNAPSHOT.jar parameters - run app (error can't find Calculator class)
+
+
+
+
+couldn't build quadraticEqution app without building Calculator app with maven (?)
+
+mvn install:install-file -Dfile=D:\Learning\Java\epam\calculator-app\target\calculator-1.0-SNAPSHOT.jar -DgroupId=com.stepavlas.calculator -DartifactId=calculator -Dversion=1.0-SNAPSHOT -Dpackaging=jar - add calculator to local repository - add Calculator to local repo
